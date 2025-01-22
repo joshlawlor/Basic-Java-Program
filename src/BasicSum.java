@@ -1,5 +1,5 @@
 
-public class Basic {
+public class BasicSum {
 
     public static void main(String[] args){
 
