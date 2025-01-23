@@ -32,6 +32,7 @@ public class Person {
 
     public void setGivenName(String s){
         //Should set the given name
+        givenName = s;
     }
 
     public String getGivenName(){
@@ -41,6 +42,7 @@ public class Person {
 
     public void setSurName(String s){
         //Should set the Surname
+        surName = s;
     }
 
     public String getSurName(){
@@ -50,6 +52,7 @@ public class Person {
 
     public void setAge(int y){
         //Should set the age in y - years
+        age = y;
     }
 
     public int getAge(){
@@ -59,6 +62,7 @@ public class Person {
 
     public void incAge(){
         //Should increment the age by 1 year
+        ++age;
     }
 
     public boolean equals(Person otherPerson){
