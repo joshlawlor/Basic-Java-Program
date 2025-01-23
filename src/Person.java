@@ -18,28 +18,43 @@ public class Person {
     private String surName;
     private int age;
 
+    public Person() {
+        givenName = "";
+        surName = "";
+        age = 0;
+    }
+
+    public Person(String g, String s, int a) {
+        givenName = g;
+        surName = s;
+        age = a;
+    }
+
     public void setGivenName(String s){
         //Should set the given name
     }
 
-    public void getGivenName(){
+    public String getGivenName(){
         //Should return the given name
+        return givenName;
     }
 
     public void setSurName(String s){
         //Should set the Surname
     }
 
-    public void getSurName(){
+    public String getSurName(){
         //Should return the Surname
+        return surName;
     }
 
     public void setAge(int y){
         //Should set the age in y - years
     }
 
-    public void getAge(){
+    public int getAge(){
         //Should return the age in years
+        return age;
     }
 
     public void incAge(){
