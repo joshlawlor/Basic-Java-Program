@@ -18,6 +18,54 @@ public class Person {
     private String surName;
     private int age;
 
+    public void setGivenName(String s){
+        //Should set the given name
+    }
+
+    public void getGivenName(){
+        //Should return the given name
+    }
+
+    public void setSurName(String s){
+        //Should set the Surname
+    }
+
+    public void getSurName(){
+        //Should return the Surname
+    }
+
+    public void setAge(int y){
+        //Should set the age in y - years
+    }
+
+    public void getAge(){
+        //Should return the age in years
+    }
+
+    public void incAge(){
+        //Should increment the age by 1 year
+    }
+
+    public boolean equals(Person otherPerson){
+        //Should compare this person to another person, return true if all fields identical
+        //Set to false initially before building method
+        return false;
+    }
+
+    public void makeCopy(Person otherPerson){
+        //Should copy the contents of the otherPerson into this object
+    }
+
+    public Person getCopy(){
+        //Should return a new Person object with a copy of the current object contents.
+        return new Person();
+    }
+
+    /*
+    @Override public String toString(){
+        return System.out.print("Hello");
+    }
+     */
 }
 
 
