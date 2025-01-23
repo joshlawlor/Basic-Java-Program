@@ -10,13 +10,10 @@ public class ForLoopPractice {
         int x, value;
         double avg;
 
-        // loop iterates from 1 to 3, inclusive.
-        x = 1;    // initialization
-        while ( x <= 3 ) {  // condition
+        for(x = 1; x <= 3; x++){
             System.out.print("Enter value #" + x + ": ");
             value = kb.nextInt();
             sum = sum + value;
-            x++;      //update
         }
 
         avg = sum / 3.0;
