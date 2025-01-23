@@ -68,23 +68,27 @@ public class Person {
     public boolean equals(Person otherPerson){
         //Should compare this person to another person, return true if all fields identical
         //Set to false initially before building method
-        return false;
+        return ( ( age == otherPerson.age) &&
+                ( givenName.compareToIgnoreCase(otherPerson.givenName) == 0 ) &&
+                ( surName.compareToIgnoreCase(otherPerson.surName) == 0 ) );
     }
 
     public void makeCopy(Person otherPerson){
         //Should copy the contents of the otherPerson into this object
+        givenName = otherPerson.givenName;
+        surName = otherPerson.surName;
+        age = otherPerson.age;
     }
 
     public Person getCopy(){
         //Should return a new Person object with a copy of the current object contents.
-        return new Person();
+        Person temp = new Person(givenName, surName, age);
+        return temp;
     }
 
-    /*
-    @Override public String toString(){
-        return System.out.print("Hello");
+    public String toString() {
+        return givenName + " " + surName + ". Age " + age + ".";
     }
-     */
 }
 
 
