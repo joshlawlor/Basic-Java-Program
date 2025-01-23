@@ -18,11 +18,22 @@ public class Person {
     private String surName;
     private int age;
 
+    /**
+     * Person constructor - no args
+     */
     public Person() {
         givenName = "";
         surName = "";
         age = 0;
     }
+
+    /**
+     * Person constructor - 3 args
+     *
+     * @param g given name
+     * @param s surname
+     * @param a age
+     */
 
     public Person(String g, String s, int a) {
         givenName = g;
@@ -89,6 +100,23 @@ public class Person {
     public String toString() {
         return givenName + " " + surName + ". Age " + age + ".";
     }
+
+    /**
+     * built-in exerciser
+     *
+     * @param args from the command line
+     */
+    public static void main(String[] args) {
+        Person p = new Person();
+
+        // ... some time later ...
+
+        p.setGivenName("Bob");
+        p.setSurName("Smith");
+        p.setAge(36);
+        System.out.print(p);
+    }
+
 }
 
 
