@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class LoopPractice {
+public class WhileLoopPractice {
 
     static Scanner kb = new Scanner(System.in);
 
